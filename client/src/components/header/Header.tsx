@@ -1,16 +1,14 @@
-import { Link } from "react-router";
 import "./Header.css";
+import { constants } from "../../../../setup/constants";
 
 function Header() {
-	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-			</ul>
-		</nav>
-	);
+  return (
+    <header className="header">
+      <div className="left-side">
+        <h1>{constants.APP_NAME}</h1>
+      </div>
+    </header>
+  );
 }
 
 export default Header;

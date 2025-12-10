@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-body {
-	margin: 0;
-	background-color: var(--secondary-color);
-}
+
 :root {
-	--primary-color: #008080;
-	--secondary-color: #f1f4f9;
+  --primary-color: #f1f4f9;
+  --secondary-color: #008080;
+  --accent-color: #ff9800;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "Baloo 2", cursive;
+  line-height: 1.6;
 }

@@ -2,11 +2,15 @@ import fs from "node:fs";
 import path from "node:path";
 
 const rootFolderName = path.basename(path.resolve());
-const packageJsonPath = path.resolve("package.json");
-const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
+const constantsPath = path.resolve("setup/constants.ts");
 
-packageJson.name = rootFolderName;
+// Charger le fichier
+let content = fs.readFileSync(constantsPath, "utf8");
 
-fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2), "utf8");
+// Remplacer toutes occurrences
+content = content.replace(/PENDING_GENERATION/g, rootFolderName);
 
-console.log(`✅ package.json mis à jour avec name: "${rootFolderName}"`);
+// Réécrire
+fs.writeFileSync(constantsPath, content);
+
+console.log(`constants.ts mis à jour avec : ${rootFolderName}`);

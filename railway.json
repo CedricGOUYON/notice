@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "nixpacks",
+    "buildCommand": "npm run build",
+    "rootDirectory": "client"
+  },
+  "deploy": {
+    "restartPolicy": "Never"
+  }
+}

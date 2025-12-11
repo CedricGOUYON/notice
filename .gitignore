@@ -1,8 +1,8 @@
 # Global
 node_modules
 .env
-dist
-build
+
+
 .DS_Store
 .vscode
 .idea
@@ -10,7 +10,7 @@ build
 npm-debug.log*
 
 # Vite (client)
-client/dist
+
 client/.vite
 
 # TypeScript (server)

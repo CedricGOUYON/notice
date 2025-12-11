@@ -4,6 +4,10 @@
     "rootDirectory": "client"
   },
   "deploy": {
-    "restartPolicy": "Never"
+    "restartPolicy": "Never",
+
+    "environmentVariables": {
+      "RAILPACK_SPA_OUTPUT_DIR": "dist"
+    }
   }
 }

@@ -4,7 +4,6 @@
   "projectSettings": {
     "rootDirectory": "client"
   },
-
   "installCommand": "npm install",
   "buildCommand": "npm run build",
 
